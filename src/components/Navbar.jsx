@@ -1,5 +1,5 @@
 import React from 'react';
-import { FiShoppingCart } from "react-icons/fi";
+import { LuShoppingCart } from "react-icons/lu";
 
 const NavBar = () => {
     return (
@@ -26,10 +26,10 @@ const NavBar = () => {
                 </ul>
             </div>
             <div className="navbar-end gap-5">
-                <button className='btn text-red-500 rounded-full'>
-                    <FiShoppingCart />
+                <button className='btn p-2.5 text-red-500 rounded-full'>
+                    <LuShoppingCart />
                 </button>
-                <a className="btn bg-red-500 rounded-full text-white">Get in Touch</a>
+                <a className="btn bg-red-500 rounded-full text-white font-bold">Get Started</a>
             </div>
         </div>
     );
