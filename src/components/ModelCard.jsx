@@ -1,11 +1,20 @@
 import React, { useState } from 'react';
+import { toast } from 'react-toastify';
 
 const ModelCard = ({ model, carts, setCarts }) => {
     const [isSubscribed, setIsSubscribed] = useState(false);
 
     const handleSubscription = () => {
         setIsSubscribed(true);
-        setCarts([...carts, model]);
+
+        const isFound = carts.find(item => item.id === model.id);
+        if (isFound) {
+            toast.error("Item already in cart!");
+            return;
+        };
+
+        setCarts([...carts, model])
+        toast.success("Item added to cart!");
     }
 
     return (
@@ -24,7 +33,7 @@ const ModelCard = ({ model, carts, setCarts }) => {
             <div className='px-6 mb-6'>
                 <button
                     onClick={handleSubscription}
-                    className='btn border-none w-full py-8 bg-red-600 hover:bg-red-500 rounded-[18px] font-semibold text-lg shadow-xl shadow-red-500/30 text-white'>
+                    className='btn border-none w-full py-7.5 bg-red-600 hover:bg-red-500 rounded-2xl font-semibold text-lg shadow-xl shadow-red-500/20 text-white'>
                     {isSubscribed ? "Subscribed" : "Subscribe Now"}
                 </button>
             </div>
