@@ -8,7 +8,7 @@ const Models = ({ modelPromise, carts, setCarts }) => {
 
 
     return (
-        <div className='py-20 max-w-[1230px] mx-auto'>
+        <div className='py-20 max-w-307.5 mx-auto'>
             <div className='text-center mb-16'>
                 <h1 className='text-5xl font-bold mb-4'>Choose Your AI Model</h1>
                 <p className='text-xl text-gray-400'>One subscription gives you access to all frontier AI models</p>
