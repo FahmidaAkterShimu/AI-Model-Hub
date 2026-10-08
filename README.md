@@ -1,16 +1,50 @@
-# React + Vite
+# AI Model Hub
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React project that I built to practice component-based development, state management, data fetching, and cart functionality.
 
-Currently, two official plugins are available:
+The application displays different AI models and lets users add models to a cart and manage their selections.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+* Browse available AI models
+* Add models to the cart
+* View selected models in the cart
+* Switch between Models and Cart sections
+* Dynamic cart item count
+* Toast notifications
+* Reusable React components
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Technologies Used
 
-## Expanding the ESLint configuration
+* React
+* JavaScript (ES6+)
+* Vite
+* Tailwind CSS
+* DaisyUI
+* React Icons
+* React Toastify
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## What I Practiced
+
+* React components and props
+* `useState()` for state management
+* Fetching local JSON data
+* Conditional rendering
+* Passing state and functions between components
+* Rendering dynamic lists
+* Cart functionality
+* Toast notifications
+
+## Data Source
+
+AI model data is loaded from a local `models.json` file using `fetch()`.
+
+## Live Website
+
+[View Live Website](https://ai-model-hub-page.netlify.app/)
+
+## Screenshot
+
+![AI Model Hub](./public/UI.png)
+
+### GitHub: [FahmidaAkterShimu](https://github.com/FahmidaAkterShimu)
